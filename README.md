@@ -9,7 +9,7 @@ method, returning the output of whatever was run.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cognition'
+gem 'cognition-coc-2026-q2'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cognition
+    $ gem install cognition-coc-2026-q2
 
 ## Usage
 
@@ -137,7 +137,7 @@ The `render` method takes a hash with the following keys:
 
 ## Contributing
 
-1. Fork it ( https://github.com/anoldguy/cognition/fork )
+1. Fork it ( https://github.com/laquereric/cognition-coc-2026-q2/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

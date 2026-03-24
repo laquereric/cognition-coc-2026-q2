@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "cognition"
+require "cognition-coc-2026-q2"
 require "test_helper"
 
 class ResponderTest < Minitest::Test

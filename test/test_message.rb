@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "cognition"
+require "cognition-coc-2026-q2"
 
 class CognitionTest < Minitest::Test
   def test_sets_metadata

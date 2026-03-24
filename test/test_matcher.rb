@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "cognition"
+require "cognition-coc-2026-q2"
 
 class MatcherTest < Minitest::Test
   def test_raises_error_without_a_trigger

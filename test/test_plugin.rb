@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "cognition"
+require "cognition-coc-2026-q2"
 
 class PluginTest < Minitest::Test
   def setup

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "cognition"
+require "cognition-coc-2026-q2"
 
 puts "Get started with your Cognition bot by registering the 'Hello' test plugin!"
 puts "> test_bot = Cognition::Bot.new"

@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require "cognition"
+require "cognition-coc-2026-q2"
 require_relative "fixtures/hello"
 require_relative "fixtures/anchor"
 

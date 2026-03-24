@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 require "httparty"
-module Cognition
+module CognitionCoc2026Q2
   class Responder
     include HTTParty
     attr_reader :url

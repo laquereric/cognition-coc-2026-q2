@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require "erb"
 require "tilt"
 require "cgi"
 
-module Cognition
+module CognitionCoc2026Q2
   module Plugins
     class PluginTemplateNotFound < StandardError; end
 

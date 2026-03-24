@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require "minitest/autorun"
 require "cognition-coc-2026-q2"
 
 class PluginTest < Minitest::Test
   def setup
     require_relative "fixtures/hello"
-    bot = Cognition::Bot.new
+    bot = CognitionCoc2026Q2::Bot.new
     @hello = Hello.new(bot)
   end
 

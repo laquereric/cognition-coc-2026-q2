@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "minitest/autorun"
 require "cognition-coc-2026-q2"
 require_relative "fixtures/hello"
@@ -5,7 +7,7 @@ require_relative "fixtures/anchor"
 
 class CognitionTest < Minitest::Test
   def setup
-    @bot = Cognition::Bot.new
+    @bot = CognitionCoc2026Q2::Bot.new
   end
 
   def test_registers_plugins
@@ -22,7 +24,7 @@ class CognitionTest < Minitest::Test
   end
 
   def test_processes_messages
-    msg = Cognition::Message.new("ping")
+    msg = CognitionCoc2026Q2::Message.new("ping")
     assert_equal "PONG", @bot.process(msg)
   end
 
@@ -36,7 +38,7 @@ class CognitionTest < Minitest::Test
 
   def test_shows_help_if_no_matches
     @bot.register(Hello)
-    msg = Cognition::Message.new("pong")
+    msg = CognitionCoc2026Q2::Message.new("pong")
     output = @bot.process(msg)
     assert_match "No such command: pong\nUse 'help' for available commands!", output
   end
@@ -48,7 +50,7 @@ class CognitionTest < Minitest::Test
   end
 
   def test_grep
-    msg = Cognition::Message.new("help | grep endpoint")
+    msg = CognitionCoc2026Q2::Message.new("help | grep endpoint")
     output = @bot.process(msg)
     assert_equal "ping - Test if the endpoint is responding. Returns PONG.", output
   end

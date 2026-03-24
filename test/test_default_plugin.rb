@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require "minitest/autorun"
 require "cognition-coc-2026-q2"
 
 class DefaultPluginTest < Minitest::Test
   def setup
-    @bot = Cognition::Bot.new
+    @bot = CognitionCoc2026Q2::Bot.new
   end
 
   def test_returns_help

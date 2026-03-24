@@ -1,4 +1,6 @@
-module Cognition
+# frozen_string_literal: true
+
+module CognitionCoc2026Q2
   class Matcher
     attr_reader :trigger, :action, :response, :help, :match_data
 

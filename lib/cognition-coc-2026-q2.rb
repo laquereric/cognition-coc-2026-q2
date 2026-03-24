@@ -1,5 +1,7 @@
-require "cognition/version"
-require "cognition/bot"
+# frozen_string_literal: true
 
-module Cognition
+require "cognition_coc_2026_q2/version"
+require "cognition_coc_2026_q2/bot"
+
+module CognitionCoc2026Q2
 end

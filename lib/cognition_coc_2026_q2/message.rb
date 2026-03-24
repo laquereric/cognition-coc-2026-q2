@@ -1,11 +1,13 @@
-module Cognition
+# frozen_string_literal: true
+
+module CognitionCoc2026Q2
   class Message
     attr_reader :command, :filter, :metadata, :responder
 
     def initialize(command, metadata = {})
       @command, @filter = split_on_unquoted_pipe(command).map { |s| s&.strip }
       @metadata = metadata
-      @responder = Cognition::Responder.new(metadata["callback_url"]) if metadata["callback_url"]
+      @responder = CognitionCoc2026Q2::Responder.new(metadata["callback_url"]) if metadata["callback_url"]
     end
 
     def reply(text)

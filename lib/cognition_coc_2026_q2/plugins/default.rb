@@ -1,6 +1,8 @@
-module Cognition
+# frozen_string_literal: true
+
+module CognitionCoc2026Q2
   module Plugins
-    class Default < Cognition::Plugins::Base
+    class Default < CognitionCoc2026Q2::Plugins::Base
       # rubocop:disable Lint/AmbiguousRegexpLiteral
       match /^ping$/i, :pong, help: {
         "ping" => "Test if the endpoint is responding. Returns PONG."

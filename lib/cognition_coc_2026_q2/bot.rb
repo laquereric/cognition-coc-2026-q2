@@ -1,16 +1,18 @@
-require "cognition/message"
-require "cognition/matcher"
-require "cognition/responder"
-require "cognition/plugins/base"
-require "cognition/plugins/default"
+# frozen_string_literal: true
 
-module Cognition
+require "cognition_coc_2026_q2/message"
+require "cognition_coc_2026_q2/matcher"
+require "cognition_coc_2026_q2/responder"
+require "cognition_coc_2026_q2/plugins/base"
+require "cognition_coc_2026_q2/plugins/default"
+
+module CognitionCoc2026Q2
   class Bot
     attr_accessor :plugins, :matchers
 
     def initialize
       # Default plugin, responds to "ping" with "PONG" and provides help text
-      register(Cognition::Plugins::Default)
+      register(CognitionCoc2026Q2::Plugins::Default)
     end
 
     def process(msg, metadata = {})
@@ -29,7 +31,7 @@ module Cognition
     def reset
       @matchers = []
       @plugins = []
-      register(Cognition::Plugins::Default)
+      register(CognitionCoc2026Q2::Plugins::Default)
     end
 
     def plugin_names
@@ -54,7 +56,7 @@ module Cognition
     end
 
     def process_string(message, metadata = {})
-      process_msg(Cognition::Message.new(message.strip, metadata))
+      process_msg(CognitionCoc2026Q2::Message.new(message.strip, metadata))
     end
 
     def matchers

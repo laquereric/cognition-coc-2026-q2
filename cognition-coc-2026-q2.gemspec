@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "cognition/version"
+require "cognition_coc_2026_q2/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "cognition-coc-2026-q2"
-  spec.version       = Cognition::VERSION
+  spec.version       = CognitionCoc2026Q2::VERSION
   spec.authors       = ["Nathan Anderson"]
   spec.email         = ["andnat@gmail.com"]
   spec.summary       = "A rules engine for running commands."

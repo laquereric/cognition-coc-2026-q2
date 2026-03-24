@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require "tilt/haml"
 require "tilt/erb"
 require "haml"
-class Hello < Cognition::Plugins::Base
+class Hello < CognitionCoc2026Q2::Plugins::Base
   match "hello", :hello, help: {
     "hello" => "Returns Hello World"
   }

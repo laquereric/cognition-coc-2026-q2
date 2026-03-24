@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "cognition/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "cognition"
+  spec.name          = "cognition-coc-2026-q2"
   spec.version       = Cognition::VERSION
   spec.authors       = ["Nathan Anderson"]
   spec.email         = ["andnat@gmail.com"]
